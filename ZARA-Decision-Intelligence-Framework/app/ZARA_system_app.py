@@ -23,17 +23,7 @@ st.set_page_config(
 )
 
 # ── 1. Constants & Config ────────────────────────────────────
-DB_USER     = 'root'
-DB_PASS_RAW = 'Amr@2004'
-DB_HOST     = '34.28.22.11'
-DB_NAME     = 'azadea'
-DB_PASS     = urllib.parse.quote_plus(DB_PASS_RAW)
-DB_URL      = f"mysql+pymysql://{DB_USER}:{DB_PASS}@{DB_HOST}/{DB_NAME}"
-PURPLE      = '#4B0082'
-LIGHT_PURPLE= '#e0aaff'
-MID_PURPLE  = '#9d4edd'
-DARK_PURPLE = '#240046'
-LOG_FILE    = 'zara_monitor.log'
+
 
 # ── 2. Logging ───────────────────────────────────────────────
 def setup_logging():
