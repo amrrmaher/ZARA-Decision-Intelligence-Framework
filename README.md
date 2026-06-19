@@ -1,32 +1,51 @@
 # ZARA Integrated Decision Intelligence Framework 🚀
 
-An enterprise-grade Decision Support System (DSS) developed for the retail sector (**ZARA Jordan - Azadea Group**) to bridge the gap between descriptive reporting and proactive execution[cite: 1]. The primary objective of this framework is to eliminate operational latency and automate systematic diagnostics, accelerating data-driven corporate decision-making[cite: 1].
+## 📌 Project Executive Summary & Scope
+In highly competitive retail environments, traditional Business Intelligence systems often limit corporate management to descriptive reporting, causing significant operational latency. This project, modeled on the retail ecosystem of **ZARA Jordan (Azadea Group)**, introduces an enterprise-grade **Decision Support System (DSS)** designed to transform raw transaction matrices into real-time decision intelligence[cite: 1]. 
+
+The primary scope encompasses bridging the gap between historical analytics and proactive management[cite: 1]. By centralizing multidimensional retail data, the system automates diagnostic pipelines, evaluates pricing and demand elasticities, and visualizes complex store operations to eliminate delayed reporting and capture immediate market opportunities[cite: 1].
 
 ---
 
-## 🏗️ System Architecture & Scope
+## 🏗️ System Architecture & Modern Data Stack
+The framework implements a robust, cloud-native modern data stack designed to support a continuous data-to-decision infrastructure loop[cite: 1, 2]:
 
-The platform deploys a cloud-native modern data stack designed to orchestrate a continuous data-to-decision workflow across multiple retail branches[cite: 1, 2]:
-*   **Infrastructure & Data Modeling:** A relational database structured into a highly optimized **Star Schema Layout** and hosted on **Google Cloud Platform (GCP Cloud SQL)** to ensure a scalable "Single Source of Truth."[cite: 1, 2]
-*   **Data Ingestion & Automation:** Automated ETL pipelines leveraging web scraping infrastructure for real-time dynamic catalog integration and dynamic inventory monitoring[cite: 1, 2].
-*   **Predictive Analytics:** Advanced Machine Learning algorithms implemented to generate forward-looking demand forecasting and strategic acquisition trends[cite: 1, 2].
-*   **Business Intelligence:** Interactive executive interfaces powered by analytical calculation models to capture financial and operational performance benchmarks[cite: 1, 2].
+*   **Cloud Infrastructure & Persistence:** Deployed on **Google Cloud Platform (GCP Cloud SQL)** utilizing a MySQL relational engine, establishing a high-availability "Single Source of Truth" that prevents local system dependencies and failures[cite: 1, 2].
+*   **Data Modeling (Analytical Schema):** Engineered utilizing a strict **Star Schema Architecture**[cite: 1, 2]. A central transactional nucleus (`Fact_Sales`) is linked via primary/foreign key configurations to fully normalized dimensional blocks including `Dim_Products`, `Dim_Customers`, `Central_Inventory`, `Dim_Employees`, `Dim_Branches`, and `Dim_Sections` to allow multi-dimensional business slicing within milliseconds[cite: 1, 2].
+*   **Data Pipelines & Ingestion (ETL):** Built robust Python ETL scripts integrated with browser automation frameworks (**Selenium**) to scan complex web DOM structures, sanitizing raw currency values via Regular Expressions (RegEx) to ingest master catalogs directly into the live database[cite: 1, 2].
+*   **Predictive Modeling Engine:** Powered by Scikit-learn machine learning libraries, implementing **Linear Regression** for time-series trend extensions and **Gradient Boosting Regressors** to capture non-linear consumer growth and acquisition curves[cite: 1, 2].
+*   **Business Intelligence & Slicing Interface:** Developed immersive **Power BI Dashboards** running advanced DAX measures to aggregate gross profits, net transaction volumes (UTS), and dynamic sliding metrics[cite: 1, 2].
 
+### 📊 Executive BI Interface Showcase
+*Below is the live production dashboard validating financial growth, seasonal contribution tracking, and gross margin controls across Jordanian branches.*
+
+![Executive Performance Dashboard](screenshots/OverViwe.png)
 ---
 
-## ⚡ Core Strategic Frameworks & Methodology
+## ⚡ Core Enterprise Modules & Methodology
 
-### 1. Behavioral Operational Simulation
-A simulation environment that models realistic customer buying patterns, demand elasticity, and seasonal fluctuations during localized peak periods (Ramadan, Eid, and clearance clearance cycles)[cite: 1, 2]. The framework operates under synchronized inventory constraints, linking transaction volumes to real-time warehouse replenishment algorithms[cite: 1, 2].
+### 1. Stochastic Behavioral Operational Simulation
+To ensure analytical realism without using confidential corporate metrics, the backend operates a dynamic generation script driven by weighted probability models[cite: 1, 2]. The framework replicates actual ZARA consumer behaviors, scaling sales velocities during local peak buying periods such as Ramadan, Eid, and summer/winter clearance clearances[cite: 1, 2]. 
+*   **The Operational Constraint Link:** The engine runs a cross-table logical trigger[cite: 1, 2]. When a transaction is committed, the system automatically recalculates store-front `Floor_Qty` in the inventory catalog and executes warehouse backstock reallocation scripts when safety thresholds are breached[cite: 1, 2].
 
-### 2. Automated Root Cause Analysis (RCA)
-An active diagnostic engine designed for continuous anomaly detection[cite: 1, 2]. When financial metrics or branch profit margins drop from historical baselines, the system initiates a structured rule-based audit to isolate localized operational degradation (`Inventory Stockouts` ➡️ `Aggressive Discount Margin Erosion` ➡️ `Labor Allocations`) without manual reporting delays[cite: 1, 2].
+### 2. Automated Root Cause Analysis (RCA) Engine
+An active rule-based logic agent designed to replace manual analyst tracing[cite: 1, 2]. The script continuously scans daily financial outputs against historical moving averages and standard deviations to capture profit anomalies[cite: 1, 2]. 
+*   **The Diagnostic Hierarchy:** Once triggered, the agent programmatically isolates the affected branch and section, sequentially auditing core operational layers: `Storefront Stock Shortages` ➡️ `Discount Margin Erosion` ➡️ `Labor/Staffing Constraints` to return an immediate diagnostic status report[cite: 1, 2].
 
 ### 3. Prescriptive What-If Simulation Sandbox
-An executive testing terminal built to reduce operational uncertainty before live corporate implementation[cite: 1, 2]. Management can simulate adjusted pricing models, marketing campaign intensities, workforce capacity configurations, and inventory distribution strategies to mathematically project net profit delta and evaluate strategic risk levels[cite: 1, 2].
+A secure strategic terminal allowing executive management to pilot operational decisions in a virtual laboratory before market execution[cite: 1, 2]. The python interface maps unified retail elasticities to compute synchronized reactions across the business ecosystem[cite: 1, 2].
+*   **Decision Variables:** Stakeholders can adjust price markups, discount campaign percentages, inventory expansion tiers, and workforce counts to immediately calculate net profit deltas, customer capacity spikes, and overall strategic risk levels[cite: 1, 2].
 
+### 🤖 Intelligent Agent & Simulation Sandbox Outputs
+*The image below demonstrates the technical outputs generated by the automated diagnostic logic and the predictive impact matrix.*
+
+![RCA Logic and Simulation Sandbox Matrix](screenshots/simulation.png)
+(screenshots/RCAAgent.png)
 ---
 
-## 📊 Strategic Business Impact
-*   **Customer Retention & Lifetime Value:** Modeled dynamic behavioral profiling to identify at-risk consumer segments and launch targeted re-engagement campaigns[cite: 1, 2].
-*   **Labor Capacity Efficiency:** Optimized branch resource allocation by shifting workforce capacity toward peak customer traffic windows without increasing overhead payroll expenses[cite: 1, 2].
+## 📈 Strategic Business Impact & Deliverables
+The implementation of this Decision Intelligence framework yielded high-impact operational playbooks for the retail management layer[cite: 1]:
+
+*   **Customer Retention Optimization:** Applied dynamic RFM calculations over a rolling window to isolate an active 25% "At-Risk" population, enabling targeted re-engagement strategies before customer churn increases[cite: 1, 2].
+*   **Workforce Allocation Efficiency:** Shifted 20–25% of operational staffing capacity from low-conversion morning cycles to high-volume post-work traffic hours (16:00–20:00), stabilizing conversion metrics without introducing additional labor overhead expenses[cite: 1, 2].
+*   **Supply Chain Continuity:** Automated predictive threshold alerts that trigger replenishment cycles the moment product `Days-to-Stockout` values fall below 7 days or sales velocities accelerate beyond normal historical bounds[cite: 1, 2].
