@@ -7,14 +7,7 @@ from tkinter import messagebox
 # =================================================================
 # CORE BACKEND: Strategic Decision Engine
 # =================================================================
-class StrategicSimulator:
-    def __init__(self):
-        self.DB_USER = 'root'
-        self.DB_PASS_RAW = 'Amr@2004'
-        self.DB_HOST = '34.28.22.11'
-        self.DB_NAME = 'azadea'
-        self.DB_PASS = urllib.parse.quote_plus(self.DB_PASS_RAW)
-        self.DB_URL = f"mysql+pymysql://{self.DB_USER}:{self.DB_PASS}@{self.DB_HOST}/{self.DB_NAME}"
+
 
         try:
             self.engine = create_engine(self.DB_URL)
